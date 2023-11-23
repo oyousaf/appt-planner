@@ -61,8 +61,8 @@ export const AppointmentForm = ({
           <option value="" disabled>
             Select a contact
           </option>
-          {contacts.map((contact, index) => (
-            <option key={index} value={contact.id}>
+          {contacts.map((contact) => (
+            <option key={contact.id} value={contact.id}>
               {contact.name}
             </option>
           ))}
